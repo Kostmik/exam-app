@@ -1,7 +1,7 @@
 ﻿using ExamApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ExamApp.net.Controllers;
+namespace ExamApp.Controllers;
 
 [ApiController]
 [Route("api/rates")]

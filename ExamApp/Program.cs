@@ -2,13 +2,10 @@
 
 builder.Services.AddControllers();
 
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
 var app = builder.Build();
 
-app.UseSwagger();
-app.UseSwaggerUI();
+// Custom deployment port: 5003.
+app.Urls.Add("http://0.0.0.0:5003");
 
 app.MapControllers();
 
